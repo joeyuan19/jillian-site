@@ -1,0 +1,185 @@
+/*  Global Styles  */
+* {
+	margin: 0px;
+	padding: 0px;
+	font-size: 16px;
+	position: relative;
+}
+html {
+	background: black;
+}
+body * {
+	opacity: 0;
+}
+
+span {
+	padding : 5px;
+}
+
+
+/*  General properties  */
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.h-center {
+	text-align: center;
+}
+.h-center > * {
+	display: inline-block;
+}
+
+
+/*  Section Styles  */
+.header {
+	height: 20%;
+	width: 100%;
+	min-height: 100px;
+}
+.content {
+	background: #02f7f5;
+	height: 70%;
+	width: 100%;
+	min-height: 300px;
+	overflow: hidden;
+}
+.footer {
+	background: #ef1f49;
+	position: fixed;
+	bottom: 0px;
+	height: 10%;
+	min-height: 20px;
+	width: 100%;
+}
+.footer-placeholder {
+	height: 10%;
+	width: 100%;
+}
+
+
+
+
+/*  Header Classes  */
+.header-container {
+	width: 50%;
+	height: 100%;
+}
+.name {
+	background: #af1fef;
+	width: 100%;
+	height: 50%;
+}
+.name span {
+	float:right;
+	font-size: 300%;
+}
+
+
+
+
+/*  Nav Styles  */
+.nav-bar {
+	background: white;
+	width: 100%;
+	height: 50%;
+}
+.nav-btn {
+	height:100%;
+	width:25%;
+	color: white;
+	background: black;
+	font-family: 'helvetica';
+	float: left;
+}
+.nav-btn > span {
+	color: white;
+	border-bottom: 2px solid blue;
+}
+.nav-btn > span:hover {
+	color: blue;
+	border-bottom: 2px solid white;
+}
+
+
+
+
+/*  Content Cards  */
+.card {
+	position: absolute;
+	border: 1px solid white;
+	height: 100%;
+	width: 50%;
+	float: left;
+}
+.active {
+	width: 60%;
+}
+
+
+/*  Image Slideshow  */
+.slideshow {
+	position: relative;
+}
+.slideshow-image {
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+
+/*  ID Specific Styles  */
+#nav {
+	height:30%;
+}
+#name {
+	height:70%;
+}
+#left-header {
+	width: 40%;
+	height: 100%;
+}
+#right-header {
+	width: 60%;
+	height: 100%;
+}
+#picture {
+	overflow-y: visible;
+	height: 200%; 
+}
+
+
+
+
+
+/*  Z-Index   */
+.content {
+	z-index: 0;
+}
+.content * {
+	z-index: 1;
+}
+.active {
+	z-index: 4;
+}
+.header {
+	z-index: 5;
+}
+.header * {
+	z-index: 6;
+}
+.footer {
+	z-index: 7;
+}
+.footer-placeholder {
+	z-index: -1;
+}
+.footer * {
+	z-index: 8;
+}
+
+
